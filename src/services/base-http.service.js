@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default class BaseHttpService {
-	BASE_URL = 'https://nestjs-taskmanagement.herokuapp.com';
+	BASE_URL = process.env.REACT_APP_SERVER_URL;
 	_accessToken = null;
 
 	constructor(routerStore) {
